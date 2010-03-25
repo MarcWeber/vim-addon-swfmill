@@ -1,0 +1,14 @@
+snippet clip
+	<clip id="${1:id}" import="${2:name.jpg|png|svg}"/>
+snippet place
+	<place id="${1:id}"/>
+snippet file
+	<movie width="800" height="240" framerate="12" version="7">
+		<background color="#233454"/>
+		<clip id="svg" import="Splash_Text.svg"/>
+		<frame>
+			<library>
+				<place id="svg"/>
+			</library>
+		</frame>
+	</movie>
